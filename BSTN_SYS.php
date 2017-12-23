@@ -12,7 +12,7 @@ $CNUSERDESC = REQUEST('CNUSERDESC');
 
 ?>
 <html> 
-<title>Catalogo de clientes</title>
+<title>BSTN_SYS</title>
 <head>	
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 	<script language="JavaScript" type="text/javascript" src="js/librerias/jquery-1.6.2.min.js"></script>
@@ -90,7 +90,7 @@ $CNUSERDESC = REQUEST('CNUSERDESC');
 								</tr>
                              </table>   
 						</div>
-						<div id="titulo" style="margin-left:280px;" class="tituloIEC">Catálogo de clientes</div>
+						<div id="titulo" style="margin-left:280px;" class="tituloIEC">BSTN_SYS</div>
 					</div>
 				</div>
             </div>        
