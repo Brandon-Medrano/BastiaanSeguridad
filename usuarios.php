@@ -165,7 +165,7 @@ $CNUSERDESC = REQUEST('CNUSERDESC');
 					 		<div class="explicacionFRM" >
 								<div id="filtros " class="contenedorIEC" style="overflow: auto; position: relative; width: 100%; display: block;">
 								 <div style="width: 80%; display: block; height: 100%;  padding-top: 10px; padding-left: 34px;">								 	
-								   <table WIDHT=25%; HEIGHT=100%;  CELLPADDING=0; cellspacing="10" style="padding-top: 12px; padding-left: 1%; position:relative;display:inline-block; border: #ff6600 1px solid;">
+								   <table WIDHT=25%; HEIGHT=150%;  CELLPADDING=0; cellspacing="10" style="padding-top: 12px; padding-left: 1%; position:relative;display:inline-block; border: #ff6600 1px solid;">
 								       <tr>
             		          			<td >
 								     		 <label style=" width:130px; position: relative; left: 3px; ">Agente</label>
@@ -207,10 +207,9 @@ $CNUSERDESC = REQUEST('CNUSERDESC');
 								   		</td>
 								   		<td >
 								     		<input type="checkbox" id="idFormularioInput" type="text" maxlength="20" value="" style="width:70px; font-family:Verdana; font-size:9px;text-align:left; color:#006699;position: relative; left: 6px;"/>
-								   		
-								     		 <label style=" width:130px; position: relative; left: 3px; ">Permitir multiples sesiones</label>
 								   		</td>
 								   		<td>
+								     		 <label style=" width:130px;display: block;  position: relative; left: 3px; ">Permitir multiples sesiones</label>
 								   		</td>
 								   		<td >
 								     		<input type="radio" id="idFormularioInput" type="text" name="radio" maxlength="20" value="" style="width:20px; font-family:Verdana; font-size:9px;text-align:left; color:#006699;position: relative; left: 6px;"/>
@@ -232,10 +231,9 @@ $CNUSERDESC = REQUEST('CNUSERDESC');
 								   		</td>
 								   		<td >
 								     		<input type="checkbox" id="idFormularioInput" type="text" maxlength="20" value="" style="width:70px; font-family:Verdana; font-size:9px;text-align:left; color:#006699;position: relative; left: 6px;"/>
-								   		
-								     		 <label style=" width:130px; position: relative; left: 3px; ">Validar con catalogo de colaboradores</label>
 								   		</td>
 								   		<td>
+								     		 <label style=" width:130px; position: relative; left: 3px; ">Validar con catalogo de colaboradores</label>
 								   		</td>
 								   		<td >
 								     		<input type="radio" id="idFormularioInput" name="radio" type="text" maxlength="20" value="" style="width:20px; font-family:Verdana; font-size:9px;text-align:left; color:#006699;position: relative; left: 6px;"/>
@@ -257,10 +255,9 @@ $CNUSERDESC = REQUEST('CNUSERDESC');
 								   		</td>
 								   		<td >
 								     		<input type="checkbox" id="idFormularioInput" type="text" maxlength="20" value="" style="width:70px; font-family:Verdana; font-size:9px;text-align:left; color:#006699;position: relative; left: 6px;"/>
-								   		
-								     		 <label style=" width:130px; position: relative; left: 3px; ">Trabajar con mensajes colaborativos</label>
 								   		</td>
 								   		<td>
+								     		 <label style=" width:130px; position: relative; left: 3px; ">Trabajar con mensajes colaborativos</label>
 								   		</td>
 								   		<td >
 								     		<input type="radio" id="idFormularioInput" name="radio" type="text" maxlength="20" value="" style="width:20px; font-family:Verdana; font-size:9px;text-align:left; color:#006699;position: relative; left: 6px;"/>
@@ -282,7 +279,8 @@ $CNUSERDESC = REQUEST('CNUSERDESC');
 								   		</td>
 								   		<td >
 								     		<input type="checkbox" id="idFormularioInput" type="text" maxlength="20" value="" style="width:70px; font-family:Verdana; font-size:9px;text-align:left; color:#006699;position: relative; left: 6px;"/>
-								   		
+								   		</td>
+								   		<td>
 								     		 <label style=" width:130px; position: relative; left: 3px; ">Trabajar con actividades del BPM</label>
 								   		</td>
 								   		</tr>
@@ -301,7 +299,8 @@ $CNUSERDESC = REQUEST('CNUSERDESC');
 								   		</td>
 								   		<td >
 								     		<input type="checkbox" id="idFormularioInput" type="text" maxlength="20" value="" style="width:70px; font-family:Verdana; font-size:9px;text-align:left; color:#006699;position: relative; left: 6px;"/>
-								   		
+								   		</td>
+								   		<td>
 								     		 <label style=" width:130px; position: relative; left: 3px; ">Usuario administrador</label>
 								   		</td>
 								   		</tr>
@@ -317,7 +316,7 @@ $CNUSERDESC = REQUEST('CNUSERDESC');
 								   		<td>
 								   		</td>
 								   		<td >
-								     		 <label style=" width:130px; position: relative; left: 3px; ">Numero asociado para pagina de colaboradores internos</label>
+								     		 <label style=" width:130px; display: block; position: relative; left: 3px; ">Numero asociado para pagina de colaboradores internos</label>
 								   		</td>
 								   		</tr>
 								   		<tr>
