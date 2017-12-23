@@ -15,7 +15,7 @@ class UsuariosRepositorioMS
 		parametros += "&usuarioMS=" + encodeURIComponent(JSON.stringify(usuarioMS));	
 		
 		var contextHandler = new AjaxContextHandler();
-		var host = window.location.origin + "/BastiaanMesa";	
+		var host = window.location.origin + "/BastiaanSeguridad";	
 		var ai = new Ajaxv2(host +"/php/repositorios/UsuariosMS.php", this, this.insertarResultado, "POST", parametros, contextHandler);		
 		contextHandler.AddAjaxv2Object(ai); 		
 		ai.GetPost(true);
@@ -38,7 +38,7 @@ class UsuariosRepositorioMS
 		
 		
 		var contextHandler = new AjaxContextHandler();
-		var host = window.location.origin + "/BastiaanMesa";	
+		var host = window.location.origin + "/BastiaanSeguridad";	
 		var ai = new Ajaxv2(host +"/php/repositorios/UsuariosMS.php", this, this.consultarResultado, "POST", parametros, contextHandler);		
 		contextHandler.AddAjaxv2Object(ai); 		
 		ai.GetPost(true);
@@ -60,7 +60,7 @@ class UsuariosRepositorioMS
 		parametros += "&usuarioMS=" + encodeURIComponent(JSON.stringify(usuarioMS));	
 		
 		var contextHandler = new AjaxContextHandler();
-		var host = window.location.origin + "/BastiaanMesa";	
+		var host = window.location.origin + "/BastiaanSeguridad";	
 		var ai = new Ajaxv2(host +"/php/repositorios/UsuariosMS.php", this, this.actualizarResultado, "POST", parametros, contextHandler);		
 		contextHandler.AddAjaxv2Object(ai); 		
 		ai.GetPost(true);
@@ -82,7 +82,7 @@ class UsuariosRepositorioMS
 		parametros = "accion=consultarPorLlaves";
 		parametros += "&llaves=" + encodeURIComponent(JSON.stringify(llaves));
 		var contextHandler = new AjaxContextHandler();
-		var host = window.location.origin + "/BastiaanMesa";	
+		var host = window.location.origin + "/BastiaanSeguridad";	
 		var ai = new Ajaxv2(host +"/php/repositorios/UsuariosMS.php", this, this.consultarPorLlavesResultado, "POST", parametros, contextHandler);		
 		contextHandler.AddAjaxv2Object(ai); 		
 		ai.GetPost(true);
@@ -102,7 +102,7 @@ class UsuariosRepositorioMS
 		parametros = "accion=eliminar";
 		parametros += "&llaves=" + encodeURIComponent(JSON.stringify(llaves));
 		var contextHandler = new AjaxContextHandler();
-		var host = window.location.origin + "/BastiaanMesa";	
+		var host = window.location.origin + "/BastiaanSeguridad";	
 		var ai = new Ajaxv2(host +"/php/repositorios/UsuariosMS.php", this, this.eliminarResultado, "POST", parametros, contextHandler);		
 		contextHandler.AddAjaxv2Object(ai); 		
 		ai.GetPost(true);

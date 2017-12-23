@@ -17,13 +17,19 @@ class UsuariosVistaMS
 	{
 		this.grid._columnas = [
 			{longitud:100, 	titulo:"Id",   	alias:"id", alineacion:"I" }, 
-			{longitud:130, 	titulo:"Alias",   	alias:"alias", alineacion:"I" }, 
-			{longitud:150, 	titulo:"Primer nombre",   alias:"primerNombre", alineacion:"I" }, 
-			{longitud:150, 	titulo:"Segundo nombre",   alias:"segundoNombre", alineacion:"I" }, 
-			{longitud:150, 	titulo:"Apellido paterno",   alias:"apellidoPaterno", alineacion:"I" },	
-			{longitud:150, 	titulo:"Apellido materno",   alias:"apellidoMaterno", alineacion:"I" },	
-			{longitud:200, 	titulo:"Telefono celular",   alias:"correoElectronicoPersonal", alineacion:"I" },
-			{longitud:250, 	titulo:"Correo electronico",   alias:"telefonoCelular", alineacion:"I" },
+			{longitud:130, 	titulo:"Descripcion",   	alias:"dsc", alineacion:"I" }, 
+			{longitud:150, 	titulo:"Password",   alias:"password", alineacion:"I" }, 
+			{longitud:150, 	titulo:"Direccion",   alias:"direccion", alineacion:"I" }, 
+			{longitud:150, 	titulo:"Idioma",   alias:"idioma", alineacion:"I" },	
+			{longitud:150, 	titulo:"CURP",   alias:"curp", alineacion:"I" },	
+			{longitud:200, 	titulo:"RFC",   alias:"rfc", alineacion:"I" },
+			{longitud:250, 	titulo:"NSS",   alias:"nss", alineacion:"I" },
+			{longitud:150, 	titulo:"Primer telefono",   alias:"ptel", alineacion:"I" }, 
+			{longitud:150, 	titulo:"Segundo telefono",   alias:"stel", alineacion:"I" }, 
+			{longitud:150, 	titulo:"Extension",   alias:"ext", alineacion:"I" },	
+			{longitud:150, 	titulo:"Extension del marcador",   alias:"extmarcador", alineacion:"I" },	
+			{longitud:200, 	titulo:"Correo",   alias:"correo", alineacion:"I" },
+			{longitud:250, 	titulo:"Contraseña del correo",   alias:"passwordc", alineacion:"I" },
 
 		]
 		
@@ -96,6 +102,7 @@ class UsuariosVistaMS
 		 {
 			if(this.modo=='ALTA')
 				this.presentador.insertar();
+			else
 				this.presentador.actualizar();
 		 }		
 		 else
@@ -138,9 +145,9 @@ class UsuariosVistaMS
 	{
 		 var criteriosSeleccion = 
 		 {				    
-			id:$('#idCriterioInput').val(),
-			primerNombre:$('#primerNombreCriterioInput').val(),
-			segundoNombre:$('#segundoNombreCriterioInput').val()
+			agente:$('#agenteCriterioInput').val(),
+			dsc:$('#dscCriterioInput').val(),
+			clase:$('#direccionCriterioInput').val()
 		 }
 		 return criteriosSeleccion;
 	}		
@@ -171,28 +178,40 @@ class UsuariosVistaMS
 	
 	set usuarioMS(valor)
 	{		
-		$('#idFormularioInput').val(valor.id);
-		$('#aliasFormularioInput').val(valor.alias);
-		$('#primerNombreFormularioInput').val(valor.primerNombre);
-		$('#segundoNombreFormularioInput').val(valor.segundoNombre);
-		$('#apellidoPaternoFormularioInput').val(valor.apellidoPaterno);
-		$('#apellidoMaternoFormularioInput').val(valor.apellidoMaterno);
-		$('#correoElectronicoPersonalFormularioInput').val(valor.correoElectronicoPersonal);
-		$('#telefonoCelularFormularioInput').val(valor.telefonoCelular);
+		$('#agenteFormularioInput').val(valor.id);
+		$('#dscFormularioInput').val(valor.dsc);
+		$('#passwordFormularioInput').val(valor.password);
+		$('#direccionFormularioInput').val(valor.direccion);
+		$('#idiomaFormularioInput').val(valor.idioma);
+		$('#curpFormularioInput').val(valor.curp);
+		$('#rfcFormularioInput').val(valor.rfc);
+		$('#nssFormularioInput').val(valor.nss);
+		$('#ptelFormularioInput').val(valor.ptel);
+		$('#stelFormularioInput').val(valor.stel);
+		$('#extFormularioInput').val(valor.ext);
+		$('#extMarcadorFormularioInput').val(valor.extmarcador);
+		$('#correoFormularioInput').val(valor.correo);
+		$('#passwordCFormularioInput').val(valor.passwordc);
 	}
 	
 	get usuarioMS()
 	{
 		 var usuarioMS = 
 		 {				    
-			 id:$('#idFormularioInput').val(),
-			 alias:$('#aliasFormularioInput').val(),
-			 primerNombre:$('#primerNombreFormularioInput').val(),
-			 segundoNombre:$('#segundoNombreFormularioInput').val(),
-			 apellidoPaterno:$('#apellidoPaternoFormularioInput').val(),
-			 apellidoMaterno:$('#apellidoMaternoFormularioInput').val(),
-			 nombreCompleto:$('#nombreCompletoFormularioInput').val(), 
-			 telefonoCelular:$('#telefonoCelularFormularioInput').val()
+			 id:$('#agenteFormularioInput').val(),
+			 dsc:$('#dscFormularioInput').val(),
+			 password:$('#passwordFormularioInput').val(),
+			 direccion:$('#direccionFormularioInput').val(),
+			 idioma:$('#idiomaFormularioInput').val(),
+			 curp:$('#curpFormularioInput').val(),
+			 rfc:$('#rfcFormularioInput').val(), 
+			 nss:$('#nssFormularioInput').val(),
+			 ptel:$('#ptelFormularioInput').val(),
+			 stel:$('#stelFormularioInput').val(),
+			 ext:$('#extFormularioInput').val(),
+			 extmarcador:$('#extMarcadorFormularioInput').val(),
+			 correo:$('#correoFormularioInput').val(), 
+			 passwordc:$('#passwordCFormularioInput').val()
 		 };
 		 return usuarioMS;
 	 }
